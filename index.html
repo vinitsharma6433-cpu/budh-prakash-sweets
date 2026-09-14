@@ -54,6 +54,9 @@
   .hsub{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#D4AF37}
   .btn-gold{background:#D4AF37;color:#46101A;font-weight:700;border-radius:999px}
   .btn-gold:hover{background:#E6C458;color:#46101A}
+  .lang-toggle{flex:none;background:transparent;border:1.5px solid rgba(212,175,55,.65);color:#F7EEDD;font-family:Marcellus,Georgia,serif;font-size:13px;font-weight:600;padding:8px 12px;border-radius:999px;cursor:pointer;letter-spacing:.02em}
+  .lang-toggle:hover{background:rgba(212,175,55,.15);border-color:#D4AF37}
+  html[data-lang="hi"] .hi{display:none}
 
   .hero{position:relative;background:#5E1620;overflow:hidden}
   .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.45}
@@ -153,8 +156,9 @@
     <img class="hlogo" src="images/logo.jpg" alt="Budh Prakash Sweets logo" />
     <div style="min-width:0;flex:1">
       <div class="hname">Budh Prakash Sweets</div>
-      <div class="hsub">Since 1981 &middot; Sardhana</div>
+      <div class="hsub" data-en="Since 1981 &middot; Sardhana" data-hi="1981 से &middot; सरधना">Since 1981 &middot; Sardhana</div>
     </div>
+    <button type="button" id="langToggle" class="lang-toggle" onclick="toggleLang()" aria-label="Switch language / भाषा बदलें">हिं</button>
     <a class="btn-gold" href="https://wa.me/919870973920?text=Namaste!%20I%20would%20like%20to%20order%20sweets%20from%20Budh%20Prakash%20Sweets." target="_blank" rel="noopener" style="flex:none;font-size:14px;padding:9px 15px">WhatsApp</a>
   </div>
 </header>
@@ -164,46 +168,46 @@
   <div class="hero-veil"></div>
   <div class="hero-in">
     <img class="hero-logo" src="images/logo.jpg" alt="Budh Prakash Sweets logo" />
-    <div class="badge">Since 1981</div>
+    <div class="badge" data-en="Since 1981" data-hi="1981 से">Since 1981</div>
     <h1>Budh Prakash Sweets</h1>
-    <div class="tag"><span class="line l1"></span><span class="txt">Meetha Ehsaas</span><span class="line l2"></span></div>
-    <p class="lede">Ganj Mandi, Sardhana, Meerut. Four decades of fresh mithai, made the way it has always been made &mdash; in small batches, by hand, with pure ingredients.</p>
+    <div class="tag"><span class="line l1"></span><span class="txt" data-en="Meetha Ehsaas" data-hi="मीठा एहसास">Meetha Ehsaas</span><span class="line l2"></span></div>
+    <p class="lede" data-en="Ganj Mandi, Sardhana, Meerut. Four decades of fresh mithai, made the way it has always been made — in small batches, by hand, with pure ingredients." data-hi="गंज मंडी, सरधना, मेरठ. चार दशकों से ताज़ी मिठाई, वैसे ही बनाई जाती है जैसे हमेशा से बनती आई है — थोड़ी-थोड़ी मात्रा में, हाथों से, शुद्ध सामग्री के साथ.">Ganj Mandi, Sardhana, Meerut. Four decades of fresh mithai, made the way it has always been made &mdash; in small batches, by hand, with pure ingredients.</p>
     <div class="cta-row">
-      <a class="cta cta-primary" href="tel:+919870973920"><span style="font-size:17px">&#9742;</span> Call Now</a>
-      <a class="cta cta-ghost" href="https://wa.me/919870973920?text=Namaste!%20I%20would%20like%20to%20order%20sweets%20from%20Budh%20Prakash%20Sweets." target="_blank" rel="noopener">WhatsApp Us</a>
+      <a class="cta cta-primary" href="tel:+919870973920"><span style="font-size:17px">&#9742;</span> <span data-en="Call Now" data-hi="अभी कॉल करें">Call Now</span></a>
+      <a class="cta cta-ghost" href="https://wa.me/919870973920?text=Namaste!%20I%20would%20like%20to%20order%20sweets%20from%20Budh%20Prakash%20Sweets." target="_blank" rel="noopener" data-en="WhatsApp Us" data-hi="व्हाट्सएप करें">WhatsApp Us</a>
     </div>
   </div>
 </section>
 
 <nav class="jump">
-  <a href="#about">About</a>
-  <a href="#sweets">Rate List</a>
-  <a href="#why">Why Us</a>
-  <a href="#gallery">Gallery</a>
-  <a href="#contact">Contact</a>
+  <a href="#about" data-en="About" data-hi="हमारे बारे में">About</a>
+  <a href="#sweets" data-en="Rate List" data-hi="रेट लिस्ट">Rate List</a>
+  <a href="#why" data-en="Why Us" data-hi="हमें क्यों चुनें">Why Us</a>
+  <a href="#gallery" data-en="Gallery" data-hi="गैलरी">Gallery</a>
+  <a href="#contact" data-en="Contact" data-hi="संपर्क करें">Contact</a>
 </nav>
-<div class="strip">Open daily 8:00 AM &ndash; 9:30 PM &middot; Fresh batches every morning</div>
+<div class="strip" data-en="Open daily 8:00 AM – 9:30 PM &middot; Fresh batches every morning" data-hi="रोज़ सुबह 8:00 से रात 9:30 तक खुला &middot; हर सुबह ताज़ी मिठाई">Open daily 8:00 AM &ndash; 9:30 PM &middot; Fresh batches every morning</div>
 
 <section class="sec" id="about">
   <div class="two">
     <div style="min-width:0">
-      <div class="eyebrow">Our Story</div>
-      <h2 class="head" style="margin-bottom:18px">Forty-five years of the same measure</h2>
+      <div class="eyebrow" data-en="Our Story" data-hi="हमारी कहानी">Our Story</div>
+      <h2 class="head" style="margin-bottom:18px" data-en="Forty-five years of the same measure" data-hi="पैंतालीस साल, वही एक नाप">Forty-five years of the same measure</h2>
       <div class="founder-row">
-        <span class="founder-name">Shri Budh Prakash Sharma</span>
-        <span class="famous-badge">Budhu Halwai</span>
+        <span class="founder-name" data-en="Shri Budh Prakash Sharma" data-hi="श्री बुध प्रकाश शर्मा">Shri Budh Prakash Sharma</span>
+        <span class="famous-badge" data-en="Budhu Halwai" data-hi="बुधु हलवाई">Budhu Halwai</span>
       </div>
-      <p class="body-copy">In 1981, he opened a small counter in Ganj Mandi with one kadhai, one weighing scale and one rule: nothing leaves the shop that he would not serve at home. Across Sardhana, people still remember him fondly by that name &mdash; it became synonymous with honest, fresh mithai.</p>
-      <p class="body-copy">That rule has not changed. Today his legacy is carried forward by <strong style="color:#7A1F2B">Shri Sanjay Kumar Sharma</strong>, who keeps the same measure, the same method and the same promise alive for the next generation. Khoya is still made fresh and finished the same day, in small batches. Families who bought their first box of barfi here now send their grandchildren for it.</p>
-      <p class="body-copy" style="margin-bottom:0">Weddings, teej, Diwali, a simple Sunday craving &mdash; for Sardhana, it has been the same address for forty-five years.</p>
+      <p class="body-copy" data-en="In 1981, he opened a small counter in Ganj Mandi with one kadhai, one weighing scale and one rule: nothing leaves the shop that he would not serve at home. Across Sardhana, people still remember him fondly by that name — it became synonymous with honest, fresh mithai." data-hi="1981 में, उन्होंने गंज मंडी में एक छोटी दुकान शुरू की — एक कढ़ाई, एक तराज़ू और एक नियम के साथ: जो घर पर न परोसें, वो दुकान से बाहर न जाए. आज भी सरधना में लोग उन्हें प्यार से इसी नाम से याद करते हैं — यह नाम ईमानदार, ताज़ी मिठाई का पर्याय बन गया.">In 1981, he opened a small counter in Ganj Mandi with one kadhai, one weighing scale and one rule: nothing leaves the shop that he would not serve at home. Across Sardhana, people still remember him fondly by that name &mdash; it became synonymous with honest, fresh mithai.</p>
+      <p class="body-copy" data-en-html="That rule has not changed. Today his legacy is carried forward by &lt;strong style=&quot;color:#7A1F2B&quot;&gt;Shri Sanjay Kumar Sharma&lt;/strong&gt;, who keeps the same measure, the same method and the same promise alive for the next generation. Khoya is still made fresh and finished the same day, in small batches. Families who bought their first box of barfi here now send their grandchildren for it." data-hi-html="यह नियम आज भी वैसा ही है. आज उनकी विरासत को आगे बढ़ा रहे हैं &lt;strong style=&quot;color:#7A1F2B&quot;&gt;श्री संजय कुमार शर्मा&lt;/strong&gt;, जो अगली पीढ़ी के लिए वही नाप, वही तरीका और वही वादा ज़िंदा रखे हुए हैं. खोया आज भी ताज़ा बनाया जाता है और उसी दिन तैयार होता है, थोड़ी-थोड़ी मात्रा में. जिन परिवारों ने यहाँ से अपनी पहली बर्फी की डिब्बी खरीदी थी, अब वो अपने पोते-पोतियों को भेजते हैं.">That rule has not changed. Today his legacy is carried forward by <strong style="color:#7A1F2B">Shri Sanjay Kumar Sharma</strong>, who keeps the same measure, the same method and the same promise alive for the next generation. Khoya is still made fresh and finished the same day, in small batches. Families who bought their first box of barfi here now send their grandchildren for it.</p>
+      <p class="body-copy" style="margin-bottom:0" data-en="Weddings, teej, Diwali, a simple Sunday craving — for Sardhana, it has been the same address for forty-five years." data-hi="शादी हो, तीज हो, दिवाली हो, या बस रविवार की मीठा खाने की इच्छा — सरधना के लिए यह पैंतालीस सालों से वही पता रहा है.">Weddings, teej, Diwali, a simple Sunday craving &mdash; for Sardhana, it has been the same address for forty-five years.</p>
       <div class="stats">
-        <div><div class="stat-n">1981</div><div class="stat-l">Established</div></div>
-        <div><div class="stat-n">45+</div><div class="stat-l">Years serving</div></div>
+        <div><div class="stat-n">1981</div><div class="stat-l" data-en="Established" data-hi="स्थापित">Established</div></div>
+        <div><div class="stat-n">45+</div><div class="stat-l" data-en="Years serving" data-hi="साल से सेवा">Years serving</div></div>
       </div>
     </div>
     <div style="min-width:0">
       <div class="framed"><img src="images/packaging-range.jpg" alt="Budh Prakash Sweets gift boxes and packaging range" /></div>
-      <p class="caption">Our &ldquo;Meetha Ehsaas&rdquo; gift boxes &mdash; Ganj Mandi, Sardhana</p>
+      <p class="caption" data-en="Our “Meetha Ehsaas” gift boxes — Ganj Mandi, Sardhana" data-hi="हमारे “मीठा एहसास” गिफ़्ट बॉक्स — गंज मंडी, सरधना">Our &ldquo;Meetha Ehsaas&rdquo; gift boxes &mdash; Ganj Mandi, Sardhana</p>
     </div>
   </div>
 </section>
@@ -211,114 +215,114 @@
 <section class="sec" id="sweets">
   <div style="max-width:1160px;margin:0 auto">
     <div style="text-align:center;max-width:620px;margin:0 auto clamp(30px,5vw,48px)">
-      <div class="eyebrow">Rate List</div>
-      <h2 class="head" style="margin-bottom:14px">Our Sweets</h2>
-      <p style="font-size:16px;line-height:1.7;color:#5A423B">Prices per kilogram. Rates may change with market prices &mdash; call to confirm before a large order.</p>
+      <div class="eyebrow" data-en="Rate List" data-hi="रेट लिस्ट">Rate List</div>
+      <h2 class="head" style="margin-bottom:14px" data-en="Our Sweets" data-hi="हमारी मिठाइयाँ">Our Sweets</h2>
+      <p style="font-size:16px;line-height:1.7;color:#5A423B" data-en="Prices per kilogram. Rates may change with market prices — call to confirm before a large order." data-hi="कीमतें प्रति किलोग्राम हैं. बाज़ार भाव के अनुसार दरें बदल सकती हैं — बड़े ऑर्डर से पहले कॉल करके पुष्टि कर लें.">Prices per kilogram. Rates may change with market prices &mdash; call to confirm before a large order.</p>
     </div>
     <div class="grid-cards">
         <article class="card">
           <img src="images/samosa.jpg" alt="Samosa" loading="lazy" />
           <div class="card-body">
-            <h3>Samosa</h3>
+            <h3 data-en="Samosa" data-hi="समोसा">Samosa</h3>
             <div class="hi">समोसा</div>
-            <div class="speciality-tag"><span>Our Speciality</span></div>
+            <div class="speciality-tag"><span data-en="Our Speciality" data-hi="हमारी खासियत">Our Speciality</span></div>
           </div>
         </article>
         <article class="card">
           <img src="images/sweet-1.jpg" alt="Kaju Katli" loading="lazy" />
           <div class="card-body">
-            <h3>Kaju Katli</h3>
+            <h3 data-en="Kaju Katli" data-hi="काजू कतली">Kaju Katli</h3>
             <div class="hi">काजू कतली</div>
-            <div class="price"><span class="amt">₹880</span><span class="unit">/ kg</span></div>
+            <div class="price"><span class="amt">₹880</span><span class="unit" data-en="/ kg" data-hi="/ किग्रा">/ kg</span></div>
           </div>
         </article>
         <article class="card">
           <img src="images/sweet-milk-cake-tray.jpg" alt="Milk Cake" loading="lazy" />
           <div class="card-body">
-            <h3>Milk Cake</h3>
+            <h3 data-en="Milk Cake" data-hi="मिल्क केक">Milk Cake</h3>
             <div class="hi">मिल्क केक</div>
-            <div class="price"><span class="amt">₹520</span><span class="unit">/ kg</span></div>
+            <div class="price"><span class="amt">₹520</span><span class="unit" data-en="/ kg" data-hi="/ किग्रा">/ kg</span></div>
           </div>
         </article>
         <article class="card">
           <img src="images/sweet-3.jpg" alt="Besan Laddu" loading="lazy" />
           <div class="card-body">
-            <h3>Besan Laddu</h3>
+            <h3 data-en="Besan Laddu" data-hi="बेसन लड्डू">Besan Laddu</h3>
             <div class="hi">बेसन लड्डू</div>
-            <div class="price"><span class="amt">₹460</span><span class="unit">/ kg</span></div>
+            <div class="price"><span class="amt">₹460</span><span class="unit" data-en="/ kg" data-hi="/ किग्रा">/ kg</span></div>
           </div>
         </article>
         <article class="card">
           <img src="images/sweet-4.jpg" alt="Gulab Jamun" loading="lazy" />
           <div class="card-body">
-            <h3>Gulab Jamun</h3>
+            <h3 data-en="Gulab Jamun" data-hi="गुलाब जामुन">Gulab Jamun</h3>
             <div class="hi">गुलाब जामुन</div>
-            <div class="price"><span class="amt">₹400</span><span class="unit">/ kg</span></div>
+            <div class="price"><span class="amt">₹400</span><span class="unit" data-en="/ kg" data-hi="/ किग्रा">/ kg</span></div>
           </div>
         </article>
         <article class="card">
           <img src="images/sweet-5.jpg" alt="Rasgulla" loading="lazy" />
           <div class="card-body">
-            <h3>Rasgulla</h3>
+            <h3 data-en="Rasgulla" data-hi="रसगुल्ला">Rasgulla</h3>
             <div class="hi">रसगुल्ला</div>
-            <div class="price"><span class="amt">₹380</span><span class="unit">/ kg</span></div>
+            <div class="price"><span class="amt">₹380</span><span class="unit" data-en="/ kg" data-hi="/ किग्रा">/ kg</span></div>
           </div>
         </article>
         <article class="card">
           <img src="images/sweet-6.jpg" alt="Barfi (Khoya)" loading="lazy" />
           <div class="card-body">
-            <h3>Barfi (Khoya)</h3>
+            <h3 data-en="Barfi (Khoya)" data-hi="खोया बर्फी">Barfi (Khoya)</h3>
             <div class="hi">खोया बर्फी</div>
-            <div class="price"><span class="amt">₹480</span><span class="unit">/ kg</span></div>
+            <div class="price"><span class="amt">₹480</span><span class="unit" data-en="/ kg" data-hi="/ किग्रा">/ kg</span></div>
           </div>
         </article>
         <article class="card">
           <img src="images/sweet-7.jpg" alt="Sohan Papdi" loading="lazy" />
           <div class="card-body">
-            <h3>Sohan Papdi</h3>
+            <h3 data-en="Sohan Papdi" data-hi="सोहन पापड़ी">Sohan Papdi</h3>
             <div class="hi">सोहन पापड़ी</div>
-            <div class="price"><span class="amt">₹360</span><span class="unit">/ kg</span></div>
+            <div class="price"><span class="amt">₹360</span><span class="unit" data-en="/ kg" data-hi="/ किग्रा">/ kg</span></div>
           </div>
         </article>
         <article class="card">
           <img src="images/sweet-8.svg" alt="Balushahi" loading="lazy" />
           <div class="card-body">
-            <h3>Balushahi</h3>
+            <h3 data-en="Balushahi" data-hi="बालूशाही">Balushahi</h3>
             <div class="hi">बालूशाही</div>
-            <div class="price"><span class="amt">₹340</span><span class="unit">/ kg</span></div>
+            <div class="price"><span class="amt">₹340</span><span class="unit" data-en="/ kg" data-hi="/ किग्रा">/ kg</span></div>
           </div>
         </article>
     </div>
-    <p style="text-align:center;font-size:14.5px;color:#7A5A52;margin-top:26px">Bulk and wedding orders taken with 24 hours&rsquo; notice. <a href="https://wa.me/919870973920?text=Namaste!%20I%20would%20like%20to%20order%20sweets%20from%20Budh%20Prakash%20Sweets." target="_blank" rel="noopener" style="font-weight:600;border-bottom:1px solid rgba(212,175,55,.8)">Send your list on WhatsApp</a></p>
+    <p style="text-align:center;font-size:14.5px;color:#7A5A52;margin-top:26px" data-en-html="Bulk and wedding orders taken with 24 hours&rsquo; notice. &lt;a href=&quot;https://wa.me/919870973920?text=Namaste!%20I%20would%20like%20to%20order%20sweets%20from%20Budh%20Prakash%20Sweets.&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; style=&quot;font-weight:600;border-bottom:1px solid rgba(212,175,55,.8)&quot;&gt;Send your list on WhatsApp&lt;/a&gt;" data-hi-html="बल्क और शादी के ऑर्डर 24 घंटे पहले सूचना देकर लिए जाते हैं. &lt;a href=&quot;https://wa.me/919870973920?text=Namaste!%20I%20would%20like%20to%20order%20sweets%20from%20Budh%20Prakash%20Sweets.&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; style=&quot;font-weight:600;border-bottom:1px solid rgba(212,175,55,.8)&quot;&gt;अपनी लिस्ट व्हाट्सएप पर भेजें&lt;/a&gt;">Bulk and wedding orders taken with 24 hours&rsquo; notice. <a href="https://wa.me/919870973920?text=Namaste!%20I%20would%20like%20to%20order%20sweets%20from%20Budh%20Prakash%20Sweets." target="_blank" rel="noopener" style="font-weight:600;border-bottom:1px solid rgba(212,175,55,.8)">Send your list on WhatsApp</a></p>
   </div>
 </section>
 
 <section class="sec" id="why">
   <div style="max-width:1060px;margin:0 auto">
     <div style="text-align:center;margin-bottom:clamp(30px,5vw,46px)">
-      <div class="eyebrow">Why Sardhana Trusts Us</div>
-      <h2 class="head">The same standard, every single day</h2>
+      <div class="eyebrow" data-en="Why Sardhana Trusts Us" data-hi="सरधना हम पर भरोसा क्यों करता है">Why Sardhana Trusts Us</div>
+      <h2 class="head" data-en="The same standard, every single day" data-hi="हर दिन वही स्तर, बिना किसी बदलाव के">The same standard, every single day</h2>
     </div>
     <div class="grid-trust">
         <div class="trust">
           <div class="tnum">01</div>
-          <h3>Made fresh daily</h3>
-          <p>Every batch is prepared the same morning it is sold. Nothing is kept overnight, nothing is reheated.</p>
+          <h3 data-en="Made fresh daily" data-hi="हर दिन ताज़ा बनता है">Made fresh daily</h3>
+          <p data-en="Every batch is prepared the same morning it is sold. Nothing is kept overnight, nothing is reheated." data-hi="हर खेप उसी सुबह बनाई जाती है जिस दिन बिकती है. कुछ भी रात भर नहीं रखा जाता, कुछ भी दोबारा गरम नहीं किया जाता.">Every batch is prepared the same morning it is sold. Nothing is kept overnight, nothing is reheated.</p>
         </div>
         <div class="trust">
           <div class="tnum">02</div>
-          <h3>Recipes from 1981</h3>
-          <p>The same proportions our founder wrote down — fresh khoya, quality ingredients, no substitutes and no artificial colours.</p>
+          <h3 data-en="Recipes from 1981" data-hi="1981 की वही रेसिपी">Recipes from 1981</h3>
+          <p data-en="The same proportions our founder wrote down — fresh khoya, quality ingredients, no substitutes and no artificial colours." data-hi="वही अनुपात जो हमारे संस्थापक ने लिख दिया था — ताज़ा खोया, अच्छी सामग्री, कोई मिलावट नहीं और कोई कृत्रिम रंग नहीं.">The same proportions our founder wrote down — fresh khoya, quality ingredients, no substitutes and no artificial colours.</p>
         </div>
         <div class="trust">
           <div class="tnum">03</div>
-          <h3>Clean by habit</h3>
-          <p>Covered counters, steel trays, gloved handling and a kitchen the family works in themselves.</p>
+          <h3 data-en="Clean by habit" data-hi="साफ़-सफ़ाई हमारी आदत है">Clean by habit</h3>
+          <p data-en="Covered counters, steel trays, gloved handling and a kitchen the family works in themselves." data-hi="ढके हुए काउंटर, स्टील की ट्रे, दस्ताने पहनकर काम, और रसोई जिसमें परिवार खुद काम करता है.">Covered counters, steel trays, gloved handling and a kitchen the family works in themselves.</p>
         </div>
         <div class="trust">
           <div class="tnum">04</div>
-          <h3>Sardhana&rsquo;s own</h3>
-          <p>Three generations of local families, thousands of weddings and festivals. Our name is our guarantee.</p>
+          <h3 data-en="Sardhana&rsquo;s own" data-hi="सरधना का अपना">Sardhana&rsquo;s own</h3>
+          <p data-en="Three generations of local families, thousands of weddings and festivals. Our name is our guarantee." data-hi="स्थानीय परिवारों की तीन पीढ़ियाँ, हज़ारों शादियाँ और त्योहार. हमारा नाम ही हमारी गारंटी है.">Three generations of local families, thousands of weddings and festivals. Our name is our guarantee.</p>
         </div>
     </div>
   </div>
@@ -327,8 +331,8 @@
 <section class="sec" id="gallery">
   <div style="max-width:1160px;margin:0 auto">
     <div style="text-align:center;margin-bottom:clamp(26px,4vw,42px)">
-      <div class="eyebrow">Gallery</div>
-      <h2 class="head">Inside the shop</h2>
+      <div class="eyebrow" data-en="Gallery" data-hi="गैलरी">Gallery</div>
+      <h2 class="head" data-en="Inside the shop" data-hi="दुकान के अंदर">Inside the shop</h2>
     </div>
     <div class="grid-gallery">
         <img class="gimg" src="images/gift-box-milk-cake.jpg" alt="Meetha Ehsaas gift box packed with fresh milk cake" loading="lazy" />
@@ -344,37 +348,37 @@
 <section class="sec" id="contact">
   <div style="max-width:1060px;margin:0 auto">
     <div style="text-align:center;margin-bottom:clamp(28px,5vw,44px)">
-      <div class="eyebrow">Visit Us</div>
+      <div class="eyebrow" data-en="Visit Us" data-hi="हमसे मिलें">Visit Us</div>
       <h2 class="head">Ganj Mandi, Sardhana</h2>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(22px,4vw,40px)">
       <div style="min-width:0;display:flex;flex-direction:column;gap:24px">
         <div>
-          <div class="label">Address</div>
-          <p style="font-size:17px;line-height:1.65;color:#3A2721">Budh Prakash Sweets<br />Ganj Mandi, Sardhana<br />Meerut, Uttar Pradesh 250342</p>
+          <div class="label" data-en="Address" data-hi="पता">Address</div>
+          <p style="font-size:17px;line-height:1.65;color:#3A2721" data-en-html="Budh Prakash Sweets&lt;br /&gt;Ganj Mandi, Sardhana&lt;br /&gt;Meerut, Uttar Pradesh 250342" data-hi-html="बुध प्रकाश स्वीट्स&lt;br /&gt;गंज मंडी, सरधना&lt;br /&gt;मेरठ, उत्तर प्रदेश 250342">Budh Prakash Sweets<br />Ganj Mandi, Sardhana<br />Meerut, Uttar Pradesh 250342</p>
         </div>
         <div>
-          <div class="label">Phone</div>
+          <div class="label" data-en="Phone" data-hi="फ़ोन">Phone</div>
           <a class="serif" href="tel:+919870973920" style="font-size:24px">+91 98709 73920</a>
         </div>
         <div>
-          <div class="label">Shop Timings</div>
+          <div class="label" data-en="Shop Timings" data-hi="दुकान का समय">Shop Timings</div>
           <div class="hours">
-            <span class="d">Mon &ndash; Sat</span><span>8:00 AM &ndash; 9:30 PM</span>
-            <span class="d">Sunday</span><span>8:00 AM &ndash; 10:00 PM</span>
-            <span class="d">Festivals</span><span>Extended hours</span>
+            <span class="d" data-en="Mon – Sat" data-hi="सोम – शनि">Mon &ndash; Sat</span><span data-en="8:00 AM – 9:30 PM" data-hi="सुबह 8:00 – रात 9:30">8:00 AM &ndash; 9:30 PM</span>
+            <span class="d" data-en="Sunday" data-hi="रविवार">Sunday</span><span data-en="8:00 AM – 10:00 PM" data-hi="सुबह 8:00 – रात 10:00">8:00 AM &ndash; 10:00 PM</span>
+            <span class="d" data-en="Festivals" data-hi="त्योहार">Festivals</span><span data-en="Extended hours" data-hi="विस्तारित समय">Extended hours</span>
           </div>
         </div>
         <div style="display:flex;flex-wrap:wrap;gap:12px">
-          <a class="cta cta-maroon" href="tel:+919870973920"><span>&#9742;</span> Call Now</a>
-          <a class="cta cta-primary" href="https://wa.me/919870973920?text=Namaste!%20I%20would%20like%20to%20order%20sweets%20from%20Budh%20Prakash%20Sweets." target="_blank" rel="noopener">WhatsApp Us</a>
+          <a class="cta cta-maroon" href="tel:+919870973920"><span>&#9742;</span> <span data-en="Call Now" data-hi="अभी कॉल करें">Call Now</span></a>
+          <a class="cta cta-primary" href="https://wa.me/919870973920?text=Namaste!%20I%20would%20like%20to%20order%20sweets%20from%20Budh%20Prakash%20Sweets." target="_blank" rel="noopener" data-en="WhatsApp Us" data-hi="व्हाट्सएप करें">WhatsApp Us</a>
         </div>
       </div>
       <div style="min-width:0">
         <div class="map-frame">
           <iframe title="Map to Budh Prakash Sweets, Ganj Mandi, Sardhana, Meerut" src="https://www.google.com/maps?q=Budh%20Prakash%20Sweets%2C%20Ganj%20Mandi%2C%20Sardhana%2C%20Meerut%2C%20Uttar%20Pradesh%20250342&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
         </div>
-        <a class="link-gold" href="https://www.google.com/maps/dir/?api=1&destination=Budh%20Prakash%20Sweets%2C%20Ganj%20Mandi%2C%20Sardhana%2C%20Meerut%2C%20Uttar%20Pradesh%20250342" target="_blank" rel="noopener">Get directions on Google Maps &rarr;</a>
+        <a class="link-gold" href="https://www.google.com/maps/dir/?api=1&destination=Budh%20Prakash%20Sweets%2C%20Ganj%20Mandi%2C%20Sardhana%2C%20Meerut%2C%20Uttar%20Pradesh%20250342" target="_blank" rel="noopener" data-en="Get directions on Google Maps →" data-hi="गूगल मैप्स पर दिशा-निर्देश पाएं →">Get directions on Google Maps &rarr;</a>
       </div>
     </div>
   </div>
@@ -383,14 +387,40 @@
 <footer>
   <img src="images/logo.jpg" alt="" />
   <div class="fname">Budh Prakash Sweets</div>
-  <div class="ftag">Meetha Ehsaas &middot; Since 1981</div>
-  <div class="fmeta">Ganj Mandi, Sardhana, Meerut, Uttar Pradesh<br />&copy; 2026 Budh Prakash Sweets. All rights reserved.</div>
+  <div class="ftag" data-en="Meetha Ehsaas &middot; Since 1981" data-hi="मीठा एहसास &middot; 1981 से">Meetha Ehsaas &middot; Since 1981</div>
+  <div class="fmeta" data-en-html="Ganj Mandi, Sardhana, Meerut, Uttar Pradesh&lt;br /&gt;&amp;copy; 2026 Budh Prakash Sweets. All rights reserved." data-hi-html="गंज मंडी, सरधना, मेरठ, उत्तर प्रदेश&lt;br /&gt;&amp;copy; 2026 बुध प्रकाश स्वीट्स. सर्वाधिकार सुरक्षित.">Ganj Mandi, Sardhana, Meerut, Uttar Pradesh<br />&copy; 2026 Budh Prakash Sweets. All rights reserved.</div>
 </footer>
 
 <div class="bar">
-  <a class="call" href="tel:+919870973920">&#9742;&nbsp; Call Now</a>
-  <a class="wa" href="https://wa.me/919870973920?text=Namaste!%20I%20would%20like%20to%20order%20sweets%20from%20Budh%20Prakash%20Sweets." target="_blank" rel="noopener">WhatsApp Us</a>
+  <a class="call" href="tel:+919870973920">&#9742;&nbsp;<span data-en="Call Now" data-hi="अभी कॉल करें">Call Now</span></a>
+  <a class="wa" href="https://wa.me/919870973920?text=Namaste!%20I%20would%20like%20to%20order%20sweets%20from%20Budh%20Prakash%20Sweets." target="_blank" rel="noopener" data-en="WhatsApp Us" data-hi="व्हाट्सएप करें">WhatsApp Us</a>
 </div>
+
+<script>
+function applyLang(lang){
+  document.documentElement.setAttribute('data-lang', lang);
+  document.querySelectorAll('[data-en-html]').forEach(function(el){
+    var v = lang === 'hi' ? el.getAttribute('data-hi-html') : el.getAttribute('data-en-html');
+    if(v !== null) el.innerHTML = v;
+  });
+  document.querySelectorAll('[data-en]:not([data-en-html])').forEach(function(el){
+    var v = lang === 'hi' ? el.getAttribute('data-hi') : el.getAttribute('data-en');
+    if(v !== null) el.textContent = v;
+  });
+  var btn = document.getElementById('langToggle');
+  if(btn) btn.textContent = lang === 'hi' ? 'EN' : 'हिं';
+  try{ localStorage.setItem('bpsLang', lang); }catch(e){}
+}
+function toggleLang(){
+  var cur = document.documentElement.getAttribute('data-lang') || 'en';
+  applyLang(cur === 'en' ? 'hi' : 'en');
+}
+(function(){
+  var saved = 'en';
+  try{ saved = localStorage.getItem('bpsLang') || 'en'; }catch(e){}
+  if(saved === 'hi') applyLang('hi');
+})();
+</script>
 
 </body>
 </html>
